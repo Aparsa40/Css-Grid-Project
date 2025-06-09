@@ -161,7 +161,36 @@ p {
 .bg-grey {
     background: var(--clr-grey-3);
 }
+/*
+=============== 
+logo_pic
+===============
+*/
+   .logo_pic {
+  position: fixed;      /* ثابت در صفحه */
+  top: 10px;            /* از بالا 10 پیکسل فاصله */
+  right: 10px;          /* از راست 10 پیکسل فاصله */
+  max-width: 120px;     /* حداکثر عرض */
+  width: 15vw;          /* عرض نسبی برای ریسپانسیو */
+  opacity: 0.4;         /* اوپسیتی 70% */
+  transition: opacity 0.3s ease;
+  z-index: 1000;        /* همیشه بالاتر از بقیه */
+}
 
+.logo_pic:hover {
+  opacity: 1;           /* وقتی موس روش رفت پررنگ‌تر بشه */
+}
+
+/* برای موبایل */
+@media (max-width: 600px) {
+  .logo_pic {
+    max-width: 80px;
+    width: 25vw;
+    top: 5px;
+    right: 5px;
+  }
+}
+ 
 /*
 =============== 
 Navbar
