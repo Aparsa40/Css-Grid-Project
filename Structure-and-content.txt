@@ -1,0 +1,2360 @@
+Css-Grid-Project/
+|___git/
+|___ .vscode/
+|       |_____Setting.json
+|___ Css/
+|      |____ .gitignor
+|      |____ bootstrap-icons.css
+|      |____ Style.css
+|___font/
+|     |____bootstrap/
+|     |____vazir/
+|___images/
+|      |______favico/
+|      |______Images.png
+|___JS/
+|       |_____App.js
+|       |_____Auth.js
+|___node_modules/
+|___videos/
+|___# Code Citations.md
+|___.~lock.structure-Project.odg#
+|___.env
+|___.gitignor
+|___ .hintrc
+|___auth.html
+|___Index.html
+|___package.json
+|___package-lock.json
+|___server.js
+|___README.md
+|___README_SERVER.md
+|__LICENSE
+
+📦/*Index.html*/
+<!DOCTYPE html>
+    <html dir="rtl" lang="fa">
+        <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Psynaps.io || Css Grid Layout Project</title>
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./images/favicon_io/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon_io/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./images/favicon_io/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./images/favicon_io/site.webmanifest" />
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+        <!-- CSS File -->
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+
+    <body>
+        <!--Logo_Pic-->
+        <img 
+        class="logo_pic"
+        src="./images/logo-watermark100x100.png"
+        alt="logo-parssstore-company"
+        >
+        <nav id="nav" class="nav">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <h3>Psynapse.ir</h3>
+                    <div class="nav-actions">
+                        <a href="./auth.html" class="header-btn header-btn-primary" id="header-auth">ثبت نام / ورود</a>
+                        <button class="header-btn header-btn-secondary" id="header-cart">
+                            <i class="bi bi-cart-fill"></i>
+                            <span class="cart-count" id="cart-count">0</span>
+                        </button>
+                        <button id="nav-btn" class="nav-btn">
+                            <i class="bi bi-list-nested"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">صفحه اصلی</a>
+                    </li>
+                    <li>
+                        <a href="#">درباره من</a>
+                    </li>
+                    <li>
+                        <a href="#">پروژه ها</a>
+                    </li>
+                    <li>
+                        <a href="#">مقالات</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <aside id="sidebar" class="sidebar">
+            <div>
+                <button id="close-btn" class="close-btn">
+                    <i class="bi bi-x"></i>
+                </button>
+
+                <ul class="sidebar-links">
+                    <li>
+                        <a href="#">صفحه اصلی</a>
+                    </li>
+                    <li>
+                        <a href="#">درباره من</a>
+                    </li>
+                    <li>
+                        <a href="#">پروژه ها</a>
+                    </li>
+                    <li>
+                        <a href="#">مقالات</a>
+                    </li>
+                </ul>
+
+                <ul class="social-icons">
+                    <li>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-telegram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-icon">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <header class="hero">
+            <div class="section-center hero-center">
+                <article class="hero-info">
+                    <div class="underline"></div>
+                    <h2>Pars-synaps-Group</h2>
+                    <h4>پارس استور پیشرو در زمینه توسعه و طراحی وبسایت وهوش مصنوعی </h4>
+                    <a href="#" class="btn hero-btn">لورم ایپسوم</a>
+
+                    <ul class="social-icons hero-icons">
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-telegram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+               <article class="hero-img">
+                    <img
+                        class="hero-photo"
+                        src="./images/hero-img.jpg"
+                        alt="hero-img"
+                    />
+                </article>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="section-center about-center">
+                <article class="about-img">
+                    <img
+                        class="about-photo"
+                        src="./images/about-img.png"
+                        alt="about-img"
+                    />
+                </article>
+
+<article class="about-info">
+    <div class="about-title">
+        <h2>درباره من</h2>
+        <div class="underline"></div>
+    </div>
+
+    <p>
+        من <strong>امیرحسین پارسا</strong> هستم؛ طراح وب‌سایت، سازنده مدارهای الکترونیکی و توسعه‌دهنده هوش مصنوعی. همیشه عاشق خلق چیزهای جدیدم — از طراحی رابط‌های کاربر گرفته تا ساخت ابزارهای هوشمندی که زندگی رو ساده‌تر و جذاب‌تر می‌کنن. ترکیب خلاقیت با منطق فنی، چیزی‌ـه که امضای شخصی من توی هر پروژه‌ست.
+    </p>
+
+    <p>
+        به باور من، فناوری باید در خدمت انسان باشه، نه برعکس. هدفم اینه که هوش مصنوعی و سیستم‌های الکترونیکی رو ملموس‌تر، کاربردی‌تر و در دسترس‌تر برای همه کنم. هر پروژه برای من فقط یک کد یا مدار نیست؛ یه قدم به‌سمت دنیایی هوشمندتر و انسانی‌تره.
+    </p>
+
+    <a href="#" class="btn">درباره من</a>
+</article>
+
+            </div>
+        </section>
+
+        <section class="section bg-grey">
+            <div class="section-title">
+                <h2>خدمات</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="section-center services-center">
+                <article class="service">
+                    <h4>لورم ایپسوم</h4>
+                    <div class="underline"></div>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+                </article>
+
+                <article class="service">
+                    <h4>لورم ایپسوم</h4>
+                    <div class="underline"></div>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+                </article>
+
+                <article class="service">
+                    <h4>لورم ایپسوم</h4>
+                    <div class="underline"></div>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section projects">
+            <div class="section-title">
+                <h2>پروژه ها</h2>
+                <div class="underline"></div>
+                <p class="projects-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                    تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد.
+                </p>
+            </div>
+
+            <div class="section-center projects-center">
+                <a class="project-1" href="#">
+                    <article class="project">
+                        <img
+                            class="project-img"
+                            src="./images/img-1.jpg"
+                            alt="project-img"
+                        />
+                        <div class="project-info">
+                            <h4>عنوان پروژه</h4>
+                            <p>لورم ایپسوم</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="project-2" href="#">
+                    <article class="project">
+                        <img
+                            class="project-img"
+                            src="./images/img-2.jpg"
+                            alt="project-img"
+                        />
+                        <div class="project-info">
+                            <h4>عنوان پروژه</h4>
+                            <p>لورم ایپسوم</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="project-3" href="#">
+                    <article class="project">
+                        <img
+                            class="project-img"
+                            src="./images/img-3.jpg"
+                            alt="project-img"
+                        />
+                        <div class="project-info">
+                            <h4>عنوان پروژه</h4>
+                            <p>لورم ایپسوم</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="project-4" href="#">
+                    <article class="project">
+                        <img
+                            class="project-img"
+                            src="./images/img-4.jpg"
+                            alt="project-img"
+                        />
+                        <div class="project-info">
+                            <h4>عنوان پروژه</h4>
+                            <p>لورم ایپسوم</p>
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </section>
+
+        <section class="connect">
+            <video
+                class="video-container"
+                autoplay
+                muted
+                loop
+                poster="./images/img-1.jpg"
+            >
+                <source src="./videos/connect.mp4" type="video/mp4" />
+                شرمنده، مرورگر شما نمایش ویدیو را ساپورت نمیکند
+            </video>
+
+            <div class="video-banner">
+                <div class="section-title">
+                    <h2>لورم ایپسوم</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <p class="video-text">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                    تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+                    افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                    طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.
+                </p>
+                <a href="#" class="btn">تماس با من</a>
+            </div>
+        </section>
+
+        <section class="section skills">
+            <div class="section-title">
+                <h2>مهارت ها</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="section-center skills-center">
+                <article>
+                    <h3>فرانت اند</h3>
+                    <div class="skill">
+                        <p>HTML/CSS</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-50"></div>
+                            <p class="skill-text skill-text-50">50%</p>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>Javascript</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-70"></div>
+                            <p class="skill-text skill-text-70">70%</p>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>Vue.js</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-80"></div>
+                            <p class="skill-text skill-text-80">80%</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <h3>بک اند</h3>
+                    <div class="skill">
+                        <p>Node.js</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-50"></div>
+                            <p class="skill-text skill-text-50">50%</p>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>PHP</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-70"></div>
+                            <p class="skill-text skill-text-70">70%</p>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <p>Python</p>
+                        <div class="skill-container">
+                            <div class="skill-value value-80"></div>
+                            <p class="skill-text skill-text-80">80%</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section timeline">
+            <div class="section-title">
+                <h2>لورم ایپسوم</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="section-center timeline-center">
+                <article class="timeline-item">
+                    <h4>1397</h4>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                    </p>
+                    <span class="number"> 1 </span>
+                </article>
+
+                <article class="timeline-item">
+                    <h4>1398</h4>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                    </p>
+                    <span class="number"> 2 </span>
+                </article>
+
+                <article class="timeline-item">
+                    <h4>1399</h4>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                    </p>
+                    <span class="number"> 3 </span>
+                </article>
+
+                <article class="timeline-item">
+                    <h4>1400</h4>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                    </p>
+                    <span class="number"> 4 </span>
+                </article>
+
+                <article class="timeline-item">
+                    <h4>1401</h4>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                    </p>
+                    <span class="number"> 5 </span>
+                </article>
+
+                <article class="timeline-item">
+                    <h4>1402</h4>
+                    <p>
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                        چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون
+                        بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.
+                    </p>
+                    <span class="number"> 6 </span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section blog">
+            <div class="section-title">
+                <h2>مقالات</h2>
+                <div class="underline"></div>
+            </div>
+
+            <div class="section-center blog-center">
+                <article class="card">
+                    <div class="card-side card-front">
+                        <img src="./images/img-1.jpg" alt="" />
+
+                        <div class="card-info">
+                            <h4>لورم ایپسوم</h4>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                سطرآنچنان که لازم است.
+                            </p>
+                            <div class="card-footer">
+                                <img
+                                    src="./images/hero-img.jpg"
+                                    alt="author-image"
+                                />
+                                <p>7 دقیقه</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-side card-back">
+                        <button class="btn">مشاهده بیشتر</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-side card-front">
+                        <img src="./images/img-2.jpg" alt="" />
+
+                        <div class="card-info">
+                            <h4>لورم ایپسوم</h4>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                سطرآنچنان که لازم است.
+                            </p>
+                            <div class="card-footer">
+                                <img
+                                    src="./images/hero-img.jpg"
+                                    alt="author-image"
+                                />
+                                <p>5 دقیقه</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-side card-back">
+                        <button class="btn">مشاهده بیشتر</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-side card-front">
+                        <img src="./images/img-3.jpg" alt="" />
+
+                        <div class="card-info">
+                            <h4>لورم ایپسوم</h4>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                سطرآنچنان که لازم است.
+                            </p>
+                            <div class="card-footer">
+                                <img
+                                    src="./images/hero-img.jpg"
+                                    alt="author-image"
+                                />
+                                <p>9 دقیقه</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-side card-back">
+                        <button class="btn">مشاهده بیشتر</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-side card-front">
+                        <img src="./images/img-4.jpg" alt="" />
+
+                        <div class="card-info">
+                            <h4>لورم ایپسوم</h4>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+                                صنعت چاپ و با استفاده از طراحان گرافیک است.
+                                چاپگرها و متون بلکه روزنامه و مجله در ستون و
+                                سطرآنچنان که لازم است.
+                            </p>
+                            <div class="card-footer">
+                                <img
+                                    src="./images/hero-img.jpg"
+                                    alt="author-image"
+                                />
+                                <p>6 دقیقه</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-side card-back">
+                        <button class="btn">مشاهده بیشتر</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <ul class="social-icons">
+                <li>
+                    <a href="#" class="social-icon">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icon">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icon">
+                        <i class="bi bi-telegram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icon">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="social-icon">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <p>
+                کلیه‌ی حقوق نزد پارس استور محفوظ است &copy; <span id="date"></span>
+            </p>
+        </footer>
+
+        <!-- Chat widget -->
+        <div class="chat-widget" aria-hidden="false">
+             <button class="chat-toggle" id="chat-toggle" aria-label="باز کردن چت" aria-expanded="false">
+                 <i class="bi bi-chat-dots-fill"></i>
+             </button>
+
+             <aside class="chat-panel" id="chat-panel" role="dialog" aria-modal="false" aria-hidden="true">
+                 <header class="chat-header">
+                     <h3>پشتیبانی</h3>
+                     <button class="chat-close" id="chat-close" aria-label="بستن چت">×</button>
+                 </header>
+
+                 <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+
+                 <form class="chat-form" id="chat-form" action="#" aria-label="فرم ارسال پیام">
+                     <input type="text" id="chat-input" class="chat-input" placeholder="پیام خود را بنویسید..." aria-label="متن پیام" autocomplete="off">
+                     <button type="submit" class="chat-send" id="chat-send" aria-label="ارسال">ارسال</button>
+                 </form>
+             </aside>
+         </div>
+
+         <!-- Load app.js AFTER chat markup so script can find DOM elements and attach listeners -->
+         <script src="./js/app.js"></script>
+     </body>
+ </html>
+_______________________________________________________________________________-
+📦 Css/style.css
+/*
+=============== 
+Fonts
+===============
+*/
+@font-face {
+    font-family: "vazir";
+    src: url("../fonts/vazir/Vazir-Medium-FD-WOL.woff2") format("woff2"),
+         url("../fonts/vazir/Vazir-Medium-FD-WOL.woff") format("woff"),
+         url("../fonts/vazir/Vazir-Medium-FD-WOL.ttf") format("truetype");
+}
+
+:root {
+    --clr-primary-1: #2f3e46;
+    --clr-primary-2: #354f52;
+    --clr-primary-3: #52796f;
+    --clr-primary-4: #84a98c;
+    --clr-primary-5: #cad2c5;
+    --clr-grey-1: #102a42;
+    --clr-grey-2: #617d98;
+    --clr-grey-3: rgb(241, 245, 248);
+    --clr-white: #fff;
+    --ff-primary: "vazir", sans-serif;
+    --transition: all 0.3s linear;
+    --radius: 0.5rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--ff-primary);
+    background: var(--clr-white);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+    font-family: var(--ff-primary);
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 0.875rem;
+}
+p {
+    margin-bottom: 1.25rem;
+    color: var(--clr-grey-2);
+}
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    body {
+        font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1;
+    }
+}
+/*  global classes */
+
+.btn {
+    background: var(--clr-primary-2);
+    color: var(--clr-white);
+    padding: 0.375rem 0.75rem;
+    display: inline-block;
+    transition: var(--transition);
+    font-size: 0.875rem;
+    font-family: var(--ff-primary);
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius);
+}
+
+.btn:hover {
+    color: var(--clr-primary-1);
+    background: var(--clr-primary-3);
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+    .section-center {
+        width: 95vw;
+    }
+}
+
+.section-title {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    background: var(--clr-primary-2);
+    margin-bottom: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-grey {
+    background: var(--clr-grey-3);
+}
+/*
+=============== 
+logo_pic
+===============
+*/
+   .logo_pic {
+  position: fixed;      /* ثابت در صفحه */
+  top: 10px;            /* از بالا 10 پیکسل فاصله */
+  right: 10px;          /* از راست 10 پیکسل فاصله */
+  max-width: 120px;     /* حداکثر عرض */
+  width: 15vw;          /* عرض نسبی برای ریسپانسیو */
+  opacity: 0.4;         /* اوپسیتی 70% */
+  transition: opacity 0.3s ease;
+  z-index: 1000;        /* همیشه بالاتر از بقیه */
+}
+
+.logo_pic:hover {
+  opacity: 1;           /* وقتی موس روش رفت پررنگ‌تر بشه */
+}
+
+/* برای موبایل */
+@media (max-width: 600px) {
+  .logo_pic {
+    max-width: 80px;
+    width: 25vw;
+    top: 5px;
+    right: 5px;
+  }
+}
+ 
+/*
+=============== 
+Navbar
+===============
+*/
+
+.nav-links {
+    display: none;
+}
+
+.nav {
+    background: var(--clr-primary-5);
+    height: 4.5rem;
+    padding: 1rem;
+    transition: var(--transition);
+    z-index: 3;
+}
+
+.nav-center {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.nav-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.nav-header h3 {
+    font-size: 1.75rem;
+}
+
+.nav-btn {
+    justify-self: end;
+    background: transparent;
+    border-color: transparent;
+    color: var(--clr-primary-2);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-links {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
+        justify-items: center;
+        justify-self: end;
+    }
+
+    .nav-links a {
+        color: var(--clr-grey-1);
+        transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+        color: var(--clr-primary-4);
+    }
+
+    .nav-center {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+}
+
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: var(--clr-white);
+    box-shadow: var(--light-shadow);
+}
+
+/*
+=============== 
+Sidebar
+===============
+*/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-grey-3);
+    z-index: 4;
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+    place-content: center;
+    transform: translateX(100%);
+    transition: var(--transition);
+}
+
+.show-sidebar {
+    transform: translateX(0);
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 3rem;
+    background: transparent;
+    border: transparent;
+    color: #bb2525;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.close-btn:hover {
+    color: #e66b6b;
+}
+
+.sidebar-links {
+    text-align: center;
+}
+
+.sidebar-links a {
+    font-size: 1.5rem;
+    color: var(--clr-grey-2);
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-links a:hover {
+    color: var(--clr-primary-4);
+}
+
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    margin-top: 3rem;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: var(--clr-grey-1);
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    color: var(--clr-primary-4);
+}
+
+/*
+=============== 
+Hero
+===============
+*/
+.hero {
+    background: var(--clr-primary-5);
+}
+
+.hero .underline {
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+
+.hero-img {
+    display: none;
+}
+
+.hero-center {
+    min-height: calc(100vh - 4.5rem);
+    display: grid;
+    place-items: center;
+}
+
+.hero-info h4 {
+    color: var(--clr-grey-2);
+    margin-top: 2rem;
+}
+
+.hero-btn {
+    margin-top: 1.25rem;
+}
+
+.hero-icons {
+    justify-items: start;
+}
+
+@media screen and (min-width: 992px) {
+    .hero-img {
+        display: block;
+        position: relative;
+    }
+
+    .hero-center {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-photo {
+        max-width: 25rem;
+        max-height: 30rem;
+        -o-object-fit: cover;
+           object-fit: cover;
+       
+        position: relative;
+    }
+
+    .hero-img::before,
+    .about-img::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        }
+}
+
+/*
+=============== 
+About
+===============
+*/
+
+.about-center {
+    display: grid;
+    gap: 3rem;
+}
+
+.about-photo {
+    max-width: 25rem;
+    max-height: 30rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  
+    position: relative;
+}
+
+.about-img {
+    justify-self: center;
+}
+
+.about-title {
+    margin-bottom: 2rem;
+}
+
+.about-title .underline {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 992px) {
+    .about-center {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-img {
+        position: relative;
+    }
+
+    .about-info {
+        align-self: center;
+    }
+}
+
+/*
+=============== 
+Services
+===============
+*/
+
+.service {
+    background: var(--clr-white);
+    padding: 3rem 1.5rem;
+    border-radius: var(--radius);
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+
+.service .underline {
+    width: 3rem;
+    height: 0.12rem;
+    transition: var(--transition);
+}
+
+.service:hover {
+    background: var(--clr-primary-2);
+    color: var(--clr-white);
+}
+
+.service p {
+    transition: var(--transition);
+}
+
+.service:hover p {
+    color: var(--clr-white);
+}
+
+.service:hover .underline {
+    background: var(--clr-white);
+}
+
+@media screen and (min-width: 676px) {
+    .services-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .services-center {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/*
+=============== 
+Projects
+===============
+*/
+
+.projects-text {
+    width: 85vw;
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.project {
+    background: var(--clr-primary-2);
+    position: relative;
+    margin-bottom: 2rem;
+    border-radius: var(--radius);
+}
+
+.project-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr-white);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.project-info p {
+    color: var(--clr-white);
+}
+
+.project:hover .project-info {
+    opacity: 1;
+}
+
+.project-img {
+    transition: var(--transition);
+    border-radius: var(--radius);
+    height: 15rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.project:hover .project-img {
+    opacity: 0.1;
+}
+
+.project::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0.25rem solid var(--clr-white);
+    border-radius: var(--radius);
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.project:hover::after {
+    opacity: 1;
+    transform: scale(0.8);
+}
+
+@media screen and (min-width: 676px) {
+    .projects-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .projects-center {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .projects-center {
+        grid-template-rows: 200px 200px;
+        gap: 1rem;
+        grid-template-areas:
+            "a b b"
+            "a c d";
+    }
+    .project {
+        height: 100%;
+    }
+
+    .project-img {
+        height: 100%;
+    }
+
+    .project-1 {
+        grid-area: a;
+    }
+
+    .project-2 {
+        grid-area: b;
+    }
+
+    .project-3 {
+        grid-area: c;
+    }
+
+    .project-4 {
+        grid-area: d;
+    }
+}
+
+/*
+=============== 
+Connect
+===============
+*/
+
+.connect {
+    min-height: 40rem;
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 10rem 0 5rem 0;
+    margin: 5rem 0;
+
+    -webkit-clip-path: polygon(
+        50% 0%,
+        100% 10%,
+        100% 90%,
+        50% 100%,
+        0 90%,
+        0 10%
+    );
+    clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+}
+
+.connect::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-white);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    z-index: -2;
+}
+
+.video-banner {
+    background: var(--clr-primary-5);
+    text-align: center;
+    padding: 3rem 5rem 12rem 5rem;
+    -webkit-clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 75%,
+        75% 75%,
+        75% 100%,
+        50% 75%,
+        0% 75%
+    );
+            clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 75%,
+        75% 75%,
+        75% 100%,
+        50% 75%,
+        0% 75%
+    );
+}
+
+.video-text {
+    max-width: 30rem;
+}
+
+/*
+=============== 
+Skills
+===============
+*/
+
+.skills {
+    background: var(--clr-primary-4);
+}
+
+.skills h3 {
+    color: var(--clr-primary-1);
+    margin: 1.5rem 0;
+}
+
+.skill {
+    margin-bottom: 1.5rem;
+}
+
+.skill p {
+    color: var(--clr-primary-1);
+    margin-bottom: 0.5rem 0;
+}
+
+.skill-container {
+    background: var(--clr-white);
+    height: 1rem;
+    width: 100%;
+    border-radius: var(--radius);
+    position: relative;
+}
+
+.skill-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--clr-primary-2);
+    height: 100%;
+    border-radius: var(--radius);
+}
+
+.value-50 {
+    width: 50%;
+}
+
+.value-70 {
+    width: 70%;
+}
+
+.value-80 {
+    width: 80%;
+}
+
+.skill-text {
+    position: absolute;
+    top: -2rem;
+    transform: translateX(-50%);
+}
+
+.skill-text-50 {
+    left: 50%;
+}
+
+.skill-text-70 {
+    left: 70%;
+}
+
+.skill-text-80 {
+    left: 80%;
+}
+
+@media screen and (min-width: 768px) {
+    .skills-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
+    }
+}
+
+/*
+=============== 
+Timeline
+===============
+*/
+
+.timeline-center {
+    width: 80vw;
+    max-width: 40rem;
+}
+
+.timeline p {
+    margin-bottom: 0;
+}
+
+.timeline-item {
+    border-top: 2px dashed var(--clr-primary-2);
+    padding: 4rem 2rem;
+    margin: 0;
+    position: relative;
+}
+
+.timeline-item:nth-child(even) {
+    border-left: 2px dashed var(--clr-primary-2);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    margin-right: 2rem;
+    padding-right: 0;
+}
+
+.timeline-item:nth-child(odd) {
+    border-right: 2px dashed var(--clr-primary-2);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-left: 2rem;
+    padding-left: 0;
+}
+
+.timeline-item:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+}
+
+.timeline-item:last-child {
+    border-bottom-left-radius: 0;
+}
+
+.number {
+    position: absolute;
+    top: 50%;
+    background: var(--clr-primary-2);
+    width: 2rem;
+    height: 2rem;
+    color: var(--clr-white);
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.timeline-item:nth-child(even) .number {
+    left: 0;
+}
+
+.timeline-item:nth-child(odd) .number {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+/*
+=============== 
+Blog
+===============
+*/
+
+.blog {
+    background: var(--clr-grey-3);
+}
+
+.card {
+    height: 27rem;
+    perspective: 1500px;
+    position: relative;
+}
+
+.card-side {
+    position: absolute;
+    transition: all 1.5s linear;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius);
+}
+
+.card-front {
+    background: var(--clr-white);
+}
+
+.card-back {
+    background: var(--clr-primary-5);
+    transform: rotateY(180deg);
+    display: grid;
+    place-items: center;
+}
+
+.card:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(0);
+}
+
+.card-front img {
+    height: 13rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.card-footer img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.card-info {
+    padding: 1rem 1.5rem;
+}
+
+.card-footer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.card-footer p {
+    margin-bottom: 0;
+    justify-self: end;
+    color: var(--clr-primary-2);
+    font-size: 0.85rem;
+}
+
+.blog-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 3rem 1rem;
+}
+
+/*
+=============== 
+Footer
+===============
+*/
+
+.footer {
+    padding-bottom: 2rem;
+    background: #222;
+    display: grid;
+    place-items: center;
+}
+
+.footer .social-icons {
+    margin-bottom: 2rem;
+}
+
+.footer .social-icon {
+    color: var(--clr-primary-2);
+}
+
+.footer .social-icon:hover {
+    color: var(--clr-primary-5);
+}
+
+.footer p {
+    font-size: 1.25rem;
+}
+
+/* Chat widget */
+.chat-widget {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1200;
+    font-family: var(--ff-primary);
+}
+
+.chat-toggle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--clr-primary-2);
+    color: var(--clr-white);
+    border: none;
+    display: grid;
+    place-items: center;
+    box-shadow: var(--dark-shadow);
+    cursor: pointer;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.chat-toggle:hover {
+    transform: translateY(-4px);
+}
+
+/* Vibrant chat icon */
+.chat-toggle {
+    background: linear-gradient(135deg,#ff7a18,#af002d);
+}
+
+.chat-panel {
+    width: 320px;
+    max-width: calc(100vw - 2rem);
+    height: 420px;
+    background: var(--clr-white);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform-origin: bottom right;
+    transform: scale(0.95);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.chat-panel.open {
+    transform: scale(1);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.chat-header {
+    background: var(--clr-primary-2);
+    color: var(--clr-white);
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-header h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.chat-close {
+    background: transparent;
+    color: var(--clr-white);
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.chat-messages {
+    flex: 1 1 auto;
+    padding: 1rem;
+    overflow-y: auto;
+    background: linear-gradient(180deg, var(--clr-grey-3), #f8fbf9);
+    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-bubble {
+    max-width: 80%;
+    padding: 0.6rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    line-height: 1.3;
+}
+
+.chat-bubble.user {
+    background: var(--clr-primary-2);
+    color: var(--clr-white);
+    align-self: flex-end;
+}
+
+.chat-bubble.bot {
+    background: var(--clr-white);
+    color: var(--clr-grey-1);
+    box-shadow: var(--light-shadow);
+    align-self: flex-start;
+}
+
+.chat-form {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    background: var(--clr-white);
+}
+
+.chat-input {
+    flex: 1 1 auto;
+    padding: 0.6rem 0.75rem;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,0.08);
+    font-family: var(--ff-primary);
+}
+
+.chat-send {
+    background: var(--clr-primary-3);
+    color: var(--clr-white);
+    border: none;
+    padding: 0.55rem 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .chat-panel {
+        width: calc(100vw - 1rem);
+        right: 0.5rem;
+        bottom: 72px;
+        height: 60vh;
+    }
+    .chat-toggle {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Header action buttons */
+.nav-actions {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.header-btn {
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+}
+
+.header-btn-primary {
+    background: linear-gradient(90deg,#6b21a8,#3b82f6);
+    color: #fff;
+    box-shadow: 0 6px 18px rgba(99,102,241,0.16);
+}
+
+.header-btn-secondary {
+    background: #fff;
+    color: var(--clr-primary-2);
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 6px 18px rgba(16,32,64,0.06);
+    position: relative;
+}
+
+.cart-count {
+    background: var(--clr-primary-3);
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 0.08rem 0.4rem;
+    border-radius: 999px;
+    margin-inline-start: 0.2rem;
+}
+
+.header-btn-primary:active, .header-btn-secondary:active {
+    transform: translateY(2px) scale(0.99);
+}
+______________________________________________________________________________-
+📦. JS/app.js
+const navbar = document.querySelector("#nav");
+const navBtn = document.querySelector("#nav-btn");
+const closeBtn = document.querySelector("#close-btn");
+const sidebar = document.querySelector("#sidebar");
+const date = document.querySelector("#date");
+
+// add fixed class to navbar
+if (navbar) {
+    // add fixed class to navbar
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 80) {
+            navbar.classList.add("navbar-fixed");
+        } else {
+            navbar.classList.remove("navbar-fixed");
+        }
+    });
+}
+
+// show sidebar
+if (navBtn && sidebar) {
+    // show sidebar
+    navBtn.addEventListener("click", function () {
+        sidebar.classList.add("show-sidebar");
+    });
+}
+
+// close sidebar
+if (closeBtn && sidebar) {
+    closeBtn.addEventListener("click", function () {
+        sidebar.classList.remove("show-sidebar");
+    });
+}
+
+// set year
+if (date) {
+    date.textContent = new Date().getFullYear();
+}
+
+/* Chat widget behavior */
+function appendMessage(text, who = 'bot') {
+    const chatMessages = document.getElementById('chat-messages');
+    if (!chatMessages) return;
+    const div = document.createElement('div');
+    div.className = `chat-bubble ${who}`;
+    div.textContent = text;
+    chatMessages.appendChild(div);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+async function simulateBotReply(userText) {
+    // Try calling local API first
+    const apiUrl = 'http://localhost:3000/chat';
+    try {
+        const resp = await fetch(apiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ message: userText }),
+        });
+        if (!resp.ok) throw new Error('Non-200 response');
+        const data = await resp.json();
+        if (data && data.reply) return data.reply;
+    } catch (err) {
+        // fallback simulated reply when the server isn't available
+        // keep a small delay to mimic network latency
+        await new Promise(r => setTimeout(r, 700 + Math.random() * 800));
+        return 'متشکرم! پیام شما دریافت شد. ما در اسرع وقت پاسخ می‌دهیم.';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    'use strict';
+
+    try {
+        const chatToggle = document.getElementById('chat-toggle');
+        const chatPanel = document.getElementById('chat-panel');
+        const chatClose = document.getElementById('chat-close');
+        const chatForm = document.getElementById('chat-form');
+        const chatInput = document.getElementById('chat-input');
+        const chatMessages = document.getElementById('chat-messages');
+
+        // Ensure initial visibility matches aria-hidden
+        if (chatPanel) {
+            const hidden = chatPanel.getAttribute('aria-hidden') === 'true';
+            chatPanel.style.display = hidden ? 'none' : 'block';
+            // keep CSS-focused visibility if possible (class 'open' controls open state)
+            if (!hidden) chatPanel.classList.add('open');
+        }
+
+        if (chatToggle && chatPanel) {
+            chatToggle.addEventListener('click', function () {
+                // Toggle an 'open' class and keep aria attributes in sync
+                const isOpen = chatPanel.classList.toggle('open');
+                this.setAttribute('aria-expanded', String(isOpen));
+                chatPanel.setAttribute('aria-hidden', String(!isOpen));
+                chatPanel.style.display = isOpen ? 'block' : 'none';
+            });
+        }
+
+        if (chatClose && chatPanel) {
+            chatClose.addEventListener('click', function () {
+                chatPanel.classList.remove('open');
+                if (chatToggle) chatToggle.setAttribute('aria-expanded', 'false');
+                chatPanel.setAttribute('aria-hidden', 'true');
+                chatPanel.style.display = 'none';
+                if (chatToggle) chatToggle.focus();
+            });
+        }
+
+        if (chatForm && chatInput && chatMessages) {
+            chatForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+                const val = chatInput.value && chatInput.value.trim();
+                if (!val) return;
+                appendMessage(val, 'user');
+                if (chatInput) chatInput.value = '';
+                // simulate typing indicator
+                appendMessage('در حال تایپ...', 'bot');
+                // replace typing indicator with real reply
+                const reply = await simulateBotReply(val);
+                // remove last bot typing bubble if it was the indicator
+                const bubbles = chatMessages.querySelectorAll('.chat-bubble.bot');
+                const last = bubbles[bubbles.length - 1];
+                if (last && last.textContent === 'در حال تایپ...') {
+                    last.textContent = reply;
+                } else {
+                    appendMessage(reply, 'bot');
+                }
+            });
+        }
+    } catch (err) {
+        // خطاهای اجرا لاگ میشه ولی صفحه شکسته نمیشه
+        console.error('init error:', err);
+    }
+});
+
+// close panel on ESC (keeps logic consistent with open class + aria-hidden)
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' || e.key === 'Esc') {
+        const chatPanel = document.getElementById('chat-panel');
+        const chatToggle = document.getElementById('chat-toggle');
+        const isOpen = chatPanel && (chatPanel.classList.contains('open') || chatPanel.getAttribute('aria-hidden') === 'false');
+        if (isOpen && chatPanel) {
+            chatPanel.classList.remove('open');
+            chatPanel.setAttribute('aria-hidden', 'true');
+            chatPanel.style.display = 'none';
+            if (chatToggle) {
+                chatToggle.setAttribute('aria-expanded', 'false');
+                chatToggle.focus();
+            }
+        }
+    }
+});
+
+// Simple cart demo: clicking header-cart increases count and optionally stores on server
+const headerCart = document.getElementById('header-cart');
+const cartCountEl = document.getElementById('cart-count');
+let cartCount = 0;
+if (headerCart && cartCountEl) {
+    headerCart.addEventListener('click', async () => {
+        cartCount += 1;
+        cartCountEl.textContent = cartCount;
+
+        // if user logged in, attempt to send item to server cart (demo item)
+        const token = localStorage.getItem('authToken');
+        if (token) {
+            try {
+                await fetch(`/api/cart/me`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${token}` },
+                    body: JSON.stringify({ item: { id: Date.now(), name: 'Demo item', price: 0 } }),
+                });
+            } catch (err) {
+                console.warn('Failed to sync cart to server', err);
+            }
+        }
+    });
+}
+__________________________________________________________________________
+📦. JS/auth.js
+document.addEventListener('DOMContentLoaded', function () {
+    'use strict';
+
+    const openRegister = document.getElementById('open-register');
+    const openCart = document.getElementById('open-cart');
+    const showRegister = document.getElementById('show-register');
+    const authModal = document.getElementById('auth-modal');
+    const authClose = document.getElementById('auth-close');
+    const authForm = document.getElementById('auth-form');
+    const authTitle = document.getElementById('auth-title');
+    const authError = document.getElementById('auth-error');
+    const oauthGitHub = document.getElementById('oauth-github');
+    const oauthGoogle = document.getElementById('oauth-google');
+
+    // defensive selectors (در صورتی که فرم‌ها وجود نداشته باشند، اسکریپت شکست نمی‌خورد)
+    const loginForm = document.getElementById('login-form');
+    const registerForm = document.getElementById('register-form');
+    const statusEl = document.getElementById('auth-status');
+
+    function showModal(mode = 'register') {
+        authModal.setAttribute('aria-hidden', 'false');
+        authModal.style.display = 'block';
+        authTitle.textContent = mode === 'register' ? 'ثبت نام' : 'ورود';
+        authForm.dataset.mode = mode;
+    }
+
+    function hideModal() {
+        authModal.setAttribute('aria-hidden', 'true');
+        authModal.style.display = 'none';
+        authError.textContent = '';
+    }
+
+    if (openRegister) openRegister.addEventListener('click', () => showModal('register'));
+    if (showRegister) showRegister.addEventListener('click', () => showModal('register'));
+    if (authClose) authClose.addEventListener('click', hideModal);
+
+    authForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const mode = authForm.dataset.mode || 'register';
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+
+        // Password rules must match server
+        if (password.length < 8 || password.length > 64) {
+            authError.textContent = 'رمز عبور باید بین 8 تا 64 کاراکتر باشد.';
+            return;
+        }
+
+        try {
+            const url = mode === 'register' ? '/api/register' : '/api/login';
+            const resp = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email, password }),
+            });
+            const data = await resp.json();
+            if (!resp.ok) throw new Error(data.error || 'خطا');
+            if (mode === 'login' && data.token) {
+                // store token for API calls
+                localStorage.setItem('authToken', data.token);
+            }
+            hideModal();
+            alert(mode === 'register' ? 'ثبت نام انجام شد' : 'ورود موفق');
+        } catch (err) {
+            authError.textContent = err.message || 'خطا در عملیات';
+        }
+    });
+
+    // Placeholder OAuth flows
+    if (oauthGitHub) oauthGitHub.addEventListener('click', () => {
+        // Replace URL with real OAuth flow under your control
+        window.location.href = '/auth/github';
+    });
+    if (oauthGoogle) oauthGoogle.addEventListener('click', () => {
+        window.location.href = '/auth/google';
+    });
+
+    async function postJson(url, body) {
+        const resp = await fetch(url, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(body),
+        });
+        return resp;
+    }
+
+    if (registerForm) {
+        registerForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = new FormData(registerForm);
+            const email = (form.get('email') || '').toString().trim();
+            const password = (form.get('password') || '').toString().trim();
+            if (!email || !password) {
+                if (statusEl) statusEl.textContent = 'لطفا ایمیل و رمز عبور را وارد کنید.';
+                return;
+            }
+            try {
+                const resp = await postJson('/api/auth/register', { email, password });
+                if (resp.ok) {
+                    const data = await resp.json();
+                    localStorage.setItem('authToken', data.token);
+                    if (statusEl) statusEl.textContent = 'ثبت نام موفق، وارد شدید.';
+                    window.location.href = '/';
+                } else {
+                    const err = await resp.json().catch(()=>({message:'خطا'}));
+                    if (statusEl) statusEl.textContent = err.message || 'ثبت نام ناموفق';
+                }
+            } catch (err) {
+                console.error(err);
+                if (statusEl) statusEl.textContent = 'خطا در ارتباط با سرور.';
+            }
+        });
+    }
+
+    if (loginForm) {
+        loginForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = new FormData(loginForm);
+            const email = (form.get('email') || '').toString().trim();
+            const password = (form.get('password') || '').toString().trim();
+            if (!email || !password) {
+                if (statusEl) statusEl.textContent = 'لطفا ایمیل و رمز عبور را وارد کنید.';
+                return;
+            }
+            try {
+                const resp = await postJson('/api/auth/login', { email, password });
+                if (resp.ok) {
+                    const data = await resp.json();
+                    localStorage.setItem('authToken', data.token);
+                    if (statusEl) statusEl.textContent = 'ورود موفق.';
+                    window.location.href = '/';
+                } else {
+                    const err = await resp.json().catch(()=>({message:'مشکل'}));
+                    if (statusEl) statusEl.textContent = err.message || 'ورود ناموفق';
+                }
+            } catch (err) {
+                console.error(err);
+                if (statusEl) statusEl.textContent = 'خطا در ارتباط با سرور.';
+            }
+        });
+    }
+});
+_______________________________________________________________________________
+-----------------------------------------------------------------------------------------------
+📦 server.js
+const express = require('express');
+const cors = require('cors');
+const path = require('path');
+
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+// serve static files (برای تست محلی)
+app.use(express.static(path.join(__dirname)));
+
+// in-memory stores (برای توسعه اولیه — در تولید از DB استفاده کنید)
+const users = new Map(); // key: email -> { password }
+const carts = new Map(); // key: email -> [items]
+
+// simple helper to create a demo token (base64(email)) — در تولید از JWT استفاده کنید
+function makeToken(email) {
+    return Buffer.from(email).toString('base64');
+}
+function tokenToEmail(token) {
+    try { return Buffer.from(token, 'base64').toString('utf8'); } catch { return null; }
+}
+
+// Chat endpoint: expects { message } and returns { reply }
+app.post('/chat', async (req, res) => {
+    const { message } = req.body || {};
+    // very simple reply; replace with AI integration later
+    const reply = message ? `سرور پاسخ: ${message}` : 'سلام! چگونه کمک کنم؟';
+    // simulate latency
+    setTimeout(() => res.json({ reply }), 400 + Math.random() * 500);
+});
+
+// Auth: register
+app.post('/api/auth/register', (req, res) => {
+    const { email, password } = req.body || {};
+    if (!email || !password) return res.status(400).json({ message: 'email and password required' });
+    if (users.has(email)) return res.status(409).json({ message: 'user already exists' });
+    users.set(email, { password });
+    carts.set(email, []);
+    const token = makeToken(email);
+    return res.json({ token, user: { email } });
+});
+
+// Auth: login
+app.post('/api/auth/login', (req, res) => {
+    const { email, password } = req.body || {};
+    if (!email || !password) return res.status(400).json({ message: 'email and password required' });
+    const u = users.get(email);
+    if (!u || u.password !== password) return res.status(401).json({ message: 'invalid credentials' });
+    const token = makeToken(email);
+    return res.json({ token, user: { email } });
+});
+
+// Cart: add item for authenticated user
+app.post('/api/cart/me', (req, res) => {
+    const auth = req.headers.authorization || '';
+    const match = auth.match(/^Bearer\s+(.+)$/i);
+    if (!match) return res.status(401).json({ message: 'missing auth' });
+    const token = match[1];
+    const email = tokenToEmail(token);
+    if (!email || !users.has(email)) return res.status(401).json({ message: 'invalid token' });
+    const item = req.body && req.body.item;
+    if (!item) return res.status(400).json({ message: 'item required' });
+    const list = carts.get(email) || [];
+    list.push(item);
+    carts.set(email, list);
+    return res.json({ ok: true, cart: list });
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Server listening on http://localhost:${port}`));
+_________________________________________________________________________________________________
+📦. package.json
+{
+  "name": "css-grid-project-server",
+  "version": "1.0.0",
+  "description": "Sample backend for Css-Grid-Project chat widget",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.3.1"
+  }
+}
+
+____________________________________________________________
+📦. auth.html
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ثبت نام / ورود</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="auth-header">
+      <div class="auth-buttons">
+        <button id="open-register" class="auth-btn primary">ثبت نام / ورود</button>
+        <button id="open-cart" class="auth-btn secondary">سبد خرید</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="auth-section">
+        <h1>ثبت نام یا ورود</h1>
+        <p>می‌توانید با ایمیل یا ورود با GitHub / Google وارد شوید.</p>
+
+        <div class="auth-actions">
+          <button id="show-register" class="btn">ثبت نام با ایمیل</button>
+          <button id="oauth-github" class="btn">ورود با GitHub</button>
+          <button id="oauth-google" class="btn">ورود با Google</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="auth-modal" class="auth-modal" aria-hidden="true">
+      <div class="auth-modal-content">
+        <button id="auth-close" class="auth-modal-close">×</button>
+        <h2 id="auth-title">ثبت نام</h2>
+        <form id="auth-form">
+          <label for="email">ایمیل:</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="password">رمز عبور:</label>
+          <input id="password" name="password" type="password" required minlength="8" maxlength="64" />
+
+          <p id="auth-error" class="auth-error" aria-live="polite"></p>
+          <button type="submit" class="btn">ارسال</button>
+        </form>
+
+        <div class="oauth-explain">
+          <p>یا ورود سریع:</p>
+          <button id="modal-github" class="btn">ورود با GitHub</button>
+          <button id="modal-google" class="btn">ورود با Google</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/auth.js"></script>
+  </body>
+</html>
+______________________________________________________________________
+📦. README_SERVER.md
+# Sample backend for chat widget
+
+This repository includes a minimal Express server to provide a local `/chat` endpoint for the chat widget.
+
+Prerequisites
+
+- Node.js installed (v14+ recommended)
+
+Install and run
+
+1. Open PowerShell in the project root (where this file lives).
+1. Install dependencies:
+
+```powershell
+npm install
+```
+
+Start the server:
+
+```powershell
+npm start
+```
+
+The server will listen on `http://localhost:3000` by default and exposes:
+
+- POST /chat
+  - Request JSON: { "message": "your text" }
+  - Response JSON: { "reply": "..." }
+
+You can replace the reply logic in `server.js` with calls to an actual bot/service later.

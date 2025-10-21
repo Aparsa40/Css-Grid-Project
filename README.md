@@ -1,2 +1,3 @@
 # Css-Grid-Project
-This site is written using HTML, CSS, JavaScript, Emmet , Bootstrap and Css Grid. It is fully responsive and can be connected to a database.
+
+This is a small demo site showcasing CSS Grid, responsive layouts, and simple interactive UI (sidebar, navbar). It includes HTML, CSS, and vanilla JavaScript.

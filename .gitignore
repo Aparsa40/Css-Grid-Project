@@ -1,3 +1,53 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Windows thumbnail cache
+*ehthumbs.db
+
+# Editor directories and files
+*.sublime-workspace
+*.sublime-project
+.idea/
+*.swp
+
+# Build output
+dist/
+build/
+
+# Misc
+coverage/
+coverage-report/
+
+# Ignore local server files that shouldn't be pushed (if you decide to keep local credentials)
+server.log
 # Logs
 logs
 *.log

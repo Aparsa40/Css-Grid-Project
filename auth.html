@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ثبت نام / ورود</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="auth-header">
+      <div class="auth-buttons">
+        <button id="open-register" class="auth-btn primary">ثبت نام / ورود</button>
+        <button id="open-cart" class="auth-btn secondary">سبد خرید</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="auth-section">
+        <h1>ثبت نام یا ورود</h1>
+        <p>می‌توانید با ایمیل یا ورود با GitHub / Google وارد شوید.</p>
+
+        <div class="auth-actions">
+          <button id="show-register" class="btn">ثبت نام با ایمیل</button>
+          <button id="oauth-github" class="btn">ورود با GitHub</button>
+          <button id="oauth-google" class="btn">ورود با Google</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="auth-modal" class="auth-modal" aria-hidden="true">
+      <div class="auth-modal-content">
+        <button id="auth-close" class="auth-modal-close">×</button>
+        <h2 id="auth-title">ثبت نام</h2>
+        <form id="auth-form">
+          <label for="email">ایمیل:</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="password">رمز عبور:</label>
+          <input id="password" name="password" type="password" required minlength="8" maxlength="64" />
+
+          <p id="auth-error" class="auth-error" aria-live="polite"></p>
+          <button type="submit" class="btn">ارسال</button>
+        </form>
+
+        <div class="oauth-explain">
+          <p>یا ورود سریع:</p>
+          <button id="modal-github" class="btn">ورود با GitHub</button>
+          <button id="modal-google" class="btn">ورود با Google</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/auth.js"></script>
+  </body>
+</html>

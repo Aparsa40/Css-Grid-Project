@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="fa">
-    <head>
+    <html dir="rtl" lang="fa">
+        <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Psynaps.io || Css Grid Layout Project</title>
@@ -42,9 +42,16 @@
             <div class="nav-center">
                 <div class="nav-header">
                     <h3>Psynapse.ir</h3>
-                    <button id="nav-btn" class="nav-btn">
-                        <i class="bi bi-list-nested"></i>
-                    </button>
+                    <div class="nav-actions">
+                        <a href="./auth.html" class="header-btn header-btn-primary" id="header-auth">ثبت نام / ورود</a>
+                        <button class="header-btn header-btn-secondary" id="header-cart">
+                            <i class="bi bi-cart-fill"></i>
+                            <span class="cart-count" id="cart-count">0</span>
+                        </button>
+                        <button id="nav-btn" class="nav-btn">
+                            <i class="bi bi-list-nested"></i>
+                        </button>
+                    </div>
                 </div>
 
                 <ul class="nav-links">
@@ -119,7 +126,7 @@
             <div class="section-center hero-center">
                 <article class="hero-info">
                     <div class="underline"></div>
-                    <h>Pars-synaps-Group</h2>
+                    <h2>Pars-synaps-Group</h2>
                     <h4>پارس استور پیشرو در زمینه توسعه و طراحی وبسایت وهوش مصنوعی </h4>
                     <a href="#" class="btn hero-btn">لورم ایپسوم</a>
 
@@ -152,7 +159,7 @@
                     </ul>
                 </article>
 
-                <article class="hero-img">
+               <article class="hero-img">
                     <img
                         class="hero-photo"
                         src="./images/hero-img.jpg"
@@ -618,6 +625,28 @@
             </p>
         </footer>
 
-        <script src="./js/app.js"></script>
-    </body>
-</html>
+        <!-- Chat widget -->
+        <div class="chat-widget" aria-hidden="false">
+             <button class="chat-toggle" id="chat-toggle" aria-label="باز کردن چت" aria-expanded="false">
+                 <i class="bi bi-chat-dots-fill"></i>
+             </button>
+
+             <aside class="chat-panel" id="chat-panel" role="dialog" aria-modal="false" aria-hidden="true">
+                 <header class="chat-header">
+                     <h3>پشتیبانی</h3>
+                     <button class="chat-close" id="chat-close" aria-label="بستن چت">×</button>
+                 </header>
+
+                 <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+
+                 <form class="chat-form" id="chat-form" action="#" aria-label="فرم ارسال پیام">
+                     <input type="text" id="chat-input" class="chat-input" placeholder="پیام خود را بنویسید..." aria-label="متن پیام" autocomplete="off">
+                     <button type="submit" class="chat-send" id="chat-send" aria-label="ارسال">ارسال</button>
+                 </form>
+             </aside>
+         </div>
+
+         <!-- Load app.js AFTER chat markup so script can find DOM elements and attach listeners -->
+         <script src="./js/app.js"></script>
+     </body>
+ </html>
